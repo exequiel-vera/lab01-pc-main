@@ -44,7 +44,7 @@ Indicar si el funcionamiento es correcto, agregar métricas de rendimiento como 
 | Tipo de Experimento   | Tiempo de ejecucion (mseg) |  Memoria utilizada (Mb) |
 |-----------------------|----------------------------|-------------------------|
 | Programa Uno (p01.py) |                            |                         |
-| Programa Dos (p02.py) |                            |                         |
+|  |                            |                         |
 
 
 
