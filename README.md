@@ -80,14 +80,13 @@ Gracias a esta información también se obtuvieron las coordenadas de los pixele
 
  
 
- 
-
 ## 5. Conclusiones
 
 La transformación de las coordenadas de metros a píxeles permitirá una representación más precisa de las rutas seguidas por las personas, lo que posibilita la construcción de una matriz de frecuencia. Esta matriz, junto con el uso de mapas de calor, ayudará a visualizar los patrones de densidad y a identificar áreas más transitadas.
 
 El uso de Python y la biblioteca NumPy permiten llevar a cabo los análisis de los datos y obtener los valores más repetidos de las coordenadas X, Y y XY. Mediante este enfoque, se puede obtener información valiosa sobre el flujo de personas en el espacio estudiado y contribuir a la toma de decisiones en cuanto a la planificación y seguridad de las áreas transitadas por multitudes. La combinación de herramientas tecnológicas y técnicas de programación en este experimento demuestra la versatilidad y potencial de la informática para abordar problemas relevantes en la sociedad actual.
 
+El utilizar técnicas de lectura y manipulación de archivos, con lo cual se creó una lista de coordenadas que proporciona la información necesaria para realizar el análisis del flujo de personas, es una etapa crucial para familiarizarse con la estructura del conjunto de datos, el tipo de información que contiene y la forma en la que están organizados. Así mismo, es importante realizar la transformación de los datos en formato de texto (string) a valores numéricos (float) para lograr realizar operaciones matemáticas con ellos, como lo es el cálculo de la pendiente ya que esta se basa en la relación entre las distancias en el espacio físico, que se trabaja con coordenadas en metros (unidad de medida continua) y por otro lado, el mismo espacio que se representa en una imagen, se hace uso de píxeles, que son unidades discretas. Al determinar la pendiente, se puede establecer una regla de correspondencia que permita mapear de manera adecuada las coordenadas en metros a coordenadas en píxeles y viceversa.
 
 
 
