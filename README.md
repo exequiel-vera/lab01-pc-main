@@ -47,6 +47,7 @@ Una vez terminada esa parte, se calculan las pendientes (Mx y My) para convertir
 
 ## 4. Resultados obtenidos
 
+En primera instancia se caculo las frecuencias para la futura construcción de la matriz, de esto se obtuvieron datos útiles para el entendimiento del data set como lo son las coordenadas que más frecuencia tienen. Estos resultados son los siguientes:
 
 |        Coordenadas       |  N° de frecuencia   |  
 |--------------------------|---------------------|
@@ -54,13 +55,38 @@ Una vez terminada esa parte, se calculan las pendientes (Mx y My) para convertir
 | y = 2.988                |                   6 |  
 | x,y = (-2.2467, 2.937)   |                   2 |
  
-Tabla 1: **Mayores frecuencias de coordenadas**
+ Tabla 1: **Mayores frecuencias de coordenadas**
+
+Luego se procedió con la transformación de las coordenadas a pixeles, para aquello se utilizaron las referencias correspondientes y se aplico la formula de la pendiente para lograr hacer la transformación.
+m = (ValorPixel2 - ValorPixel1) / (ValorMetrico2 - ValorMetrico1)
+
+**donde:** 
+
+m = pendiente 
+
+ValorPixel = referencia cartesiana de una coordenada en pixeles 
+
+ValorMetrico = referencia cartesiana de una coordenada en metros 
+
+**Las pendientes que se obtuvieron a través de estas fórmulas fueron las siguientes:**
+
+Pendiente de X (pixel/metro) es:  35.55555555555556
+
+Pendiente de y (pixel/metro) es:  -96.0
+
+Gracias a esta información también se obtuvieron las coordenadas de los pixeles que más se repetían ya que con esto se puede obtener los puntos importantes dentro del sistema analizado, estos puntos con los siguientes:
+[(149, 340), (226, 157), (233, 378), (240, 198), (280, 70), (348, 81), (350, 343), (352, 143), (366, 77), (371, 127), (459, 184), (466, 189), (473, 138)] con un recuento de 2 oportunidades cada una.
 
 
+ 
+
+ 
 
 ## 5. Conclusiones
 
-Apartir de los resultados inferir nuevo conocimiento. Por ejemplo, al ultilizar concatenación de listas cono "+" el programa es menos eficiente en términos de tiempo que utilizar 'append()'.
+La transformación de las coordenadas de metros a píxeles permitirá una representación más precisa de las rutas seguidas por las personas, lo que posibilita la construcción de una matriz de frecuencia. Esta matriz, junto con el uso de mapas de calor, ayudará a visualizar los patrones de densidad y a identificar áreas más transitadas.
+
+El uso de Python y la biblioteca NumPy permiten llevar a cabo los análisis de los datos y obtener los valores más repetidos de las coordenadas X, Y y XY. Mediante este enfoque, se puede obtener información valiosa sobre el flujo de personas en el espacio estudiado y contribuir a la toma de decisiones en cuanto a la planificación y seguridad de las áreas transitadas por multitudes. La combinación de herramientas tecnológicas y técnicas de programación en este experimento demuestra la versatilidad y potencial de la informática para abordar problemas relevantes en la sociedad actual.
 
 
 
